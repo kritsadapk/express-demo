@@ -1,0 +1,22 @@
+{
+  "name": "express-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "node app.js",
+    "start": "node dist/app.js",
+    "build": "webpack --config build/webpack.prod.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.6",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
