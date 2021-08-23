@@ -2,9 +2,13 @@ const express = require("express");
 const exec = require("child_process").exec;
 const app = express();
 
-app.get("/healthz", function (req, res) {
-  res.status(200).end();
+app.get("/ok", function (req, res) {
+  res.status(200).json({ ok: true }).end();
 });
+
+app.get('/test',function(req,res)){
+  res.status(200).json({ ok: true }).end();
+}
 
 app.get("/", function (req, res) {
   var poweredBy = process.env.POWERED_BY;
